@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://centrovienca.com/sitemap.xml

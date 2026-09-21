@@ -1,0 +1,235 @@
+# Antigua portada de WordPress
+/pagina-ejemplo                                              /                                                  301
+/index.php                                                   /                                                  301
+
+# Enlaces cortos de WordPress (?p= / ?page_id= / ?attachment_id=)
+/ p=61                                                       /como-superar-una-ruptura-de-pareja/               301!
+/ p=470                                                      /como-gestionar-el-estres/                         301!
+/ p=59                                                       /custodia-compartida-la-mejor-opcion/              301!
+/ page_id=438                                                /elemento/                                         301!
+/ page_id=418                                                /delitos-cometidos-por-menores/                    301!
+/ page_id=414                                                /delitos-contra-el-patrimonio/                     301!
+/ page_id=410                                                /delitos-contra-la-seguridad-vial/                 301!
+/ page_id=406                                                /agresiones-sexuales/                              301!
+/ page_id=401                                                /delitos-contra-la-libertad/                       301!
+/ page_id=396                                                /violencia-de-genero/                              301!
+/ page_id=384                                                /delitos-contra-la-persona/                        301!
+/ page_id=370                                                /desahucios/                                       301!
+/ page_id=361                                                /herencias/                                        301!
+/ page_id=358                                                /ejecucion-de-sentencias/                          301!
+/ page_id=353                                                /jurisdiccion-voluntaria/                          301!
+/ page_id=349                                                /impagos-de-pensiones/                             301!
+/ page_id=342                                                /liquidacion-de-gananciales/                       301!
+/ page_id=336                                                /modificacion-de-medidas/                          301!
+/ page_id=328                                                /custodia-compartida/                              301!
+/ page_id=311                                                /divorcios-y-separaciones/                         301!
+/ page_id=238                                                /terapia-adulto/                                   301!
+/ page_id=236                                                /terapia-ninos-y-adolescentes/                     301!
+/ page_id=145                                                /derecho-penal/                                    301!
+/ page_id=143                                                /derecho-civil/                                    301!
+/ page_id=134                                                /aviso-legal/                                      301!
+/ page_id=80                                                 /blog/                                             301!
+/ page_id=30                                                 /contacta/                                         301!
+/ page_id=28                                                 /psicologia/                                       301!
+/ page_id=26                                                 /abogada/                                          301!
+/ page_id=24                                                 /conocenos/                                        301!
+/ page_id=3                                                  /politica-privacidad/                              301!
+/ page_id=2                                                  /                                                  301!
+
+# Páginas de adjuntos: a la imagen si se conserva, si no a su página
+/como-gestionar-el-estres/diseno-sin-titulo-54               /img/2024/02/Diseno-sin-titulo-54.png              301
+/ attachment_id=596                                          /img/2024/02/Diseno-sin-titulo-54.png              301!
+/delitos-contra-la-persona/15-2                              /img/2024/02/15.png                                301
+/ attachment_id=392                                          /img/2024/02/15.png                                301!
+/delitos-contra-la-persona/14-2                              /img/2024/02/14.png                                301
+/ attachment_id=391                                          /img/2024/02/14.png                                301!
+/delitos-contra-la-persona/13-2                              /img/2024/02/13.png                                301
+/ attachment_id=390                                          /img/2024/02/13.png                                301!
+/delitos-contra-la-persona/12-2                              /img/2024/02/12.png                                301
+/ attachment_id=389                                          /img/2024/02/12.png                                301!
+/delitos-contra-la-persona/11-2                              /img/2024/02/11.png                                301
+/ attachment_id=388                                          /img/2024/02/11.png                                301!
+/delitos-contra-la-persona/10-2                              /img/2024/02/10.png                                301
+/ attachment_id=387                                          /img/2024/02/10.png                                301!
+/delitos-contra-la-persona/attachment/9                      /delitos-contra-la-persona/                        301
+/ attachment_id=386                                          /delitos-contra-la-persona/                        301!
+/wp-content/uploads/2024/02/9.png                            /delitos-contra-la-persona/                        301
+/herencias/attachment/8                                      /img/2024/02/8.png                                 301
+/ attachment_id=366                                          /img/2024/02/8.png                                 301!
+/herencias/attachment/7                                      /img/2024/02/7.png                                 301
+/ attachment_id=365                                          /img/2024/02/7.png                                 301!
+/herencias/6-4                                               /img/2024/02/6.png                                 301
+/ attachment_id=364                                          /img/2024/02/6.png                                 301!
+/custodia-compartida/5-3                                     /img/2024/02/5.png                                 301
+/ attachment_id=333                                          /img/2024/02/5.png                                 301!
+/custodia-compartida/4-4                                     /img/2024/02/4.png                                 301
+/ attachment_id=332                                          /img/2024/02/4.png                                 301!
+/custodia-compartida/3-2                                     /custodia-compartida/                              301
+/ attachment_id=331                                          /custodia-compartida/                              301!
+/wp-content/uploads/2024/02/3.png                            /custodia-compartida/                              301
+/custodia-compartida/2-3                                     /img/2024/02/2.png                                 301
+/ attachment_id=330                                          /img/2024/02/2.png                                 301!
+/custodia-compartida/attachment/1                            /img/2024/02/1.png                                 301
+/ attachment_id=329                                          /img/2024/02/1.png                                 301!
+/conocenos/img_2958-2                                        /conocenos/                                        301
+/ attachment_id=309                                          /conocenos/                                        301!
+/wp-content/uploads/2024/02/IMG_2958-scaled.webp             /conocenos/                                        301
+/conocenos/rpt                                               /conocenos/                                        301
+/ attachment_id=307                                          /conocenos/                                        301!
+/wp-content/uploads/2024/02/359-scaled.jpeg                  /conocenos/                                        301
+/contacta/img_2447                                           /img/2024/01/IMG_2447.jpg                          301
+/ attachment_id=293                                          /img/2024/01/IMG_2447.jpg                          301!
+/pagina-ejemplo/img_7567                                     /img/2023/12/IMG_7567.png                          301
+/ attachment_id=281                                          /img/2023/12/IMG_7567.png                          301!
+/pagina-ejemplo/img_7566                                     /img/2023/12/IMG_7566.png                          301
+/ attachment_id=280                                          /img/2023/12/IMG_7566.png                          301!
+/pagina-ejemplo/dcb65bf1-a1e0-459d-9f7d-8e0a0d1ad944-1       /                                                  301
+/ attachment_id=279                                          /                                                  301!
+/wp-content/uploads/2023/12/dcb65bf1-a1e0-459d-9f7d-8e0a0d1ad944-1.webp /                                                  301
+/pagina-ejemplo/6-3                                          /                                                  301
+/ attachment_id=278                                          /                                                  301!
+/wp-content/uploads/2023/12/6.png                            /                                                  301
+/pagina-ejemplo/5-2                                          /                                                  301
+/ attachment_id=277                                          /                                                  301!
+/wp-content/uploads/2023/12/5.png                            /                                                  301
+/pagina-ejemplo/6915c1e0-705b-45fe-af5a-a6d96bf8db62         /                                                  301
+/ attachment_id=276                                          /                                                  301!
+/wp-content/uploads/2023/12/6915c1e0-705b-45fe-af5a-a6d96bf8db62.webp /                                                  301
+/terapia-ninos-y-adolescentes/img_7570                       /img/2023/12/IMG_7570-scaled.webp                  301
+/ attachment_id=274                                          /img/2023/12/IMG_7570-scaled.webp                  301!
+/terapia-ninos-y-adolescentes/diseno-sin-titulo-53           /terapia-ninos-y-adolescentes/                     301
+/ attachment_id=271                                          /terapia-ninos-y-adolescentes/                     301!
+/wp-content/uploads/2023/12/Diseno-sin-titulo-53.png         /terapia-ninos-y-adolescentes/                     301
+/terapia-adulto/img_7568                                     /img/2023/12/IMG_7568-scaled.webp                  301
+/ attachment_id=268                                          /img/2023/12/IMG_7568-scaled.webp                  301!
+/terapia-adulto/diseno-sin-titulo-52                         /terapia-adulto/                                   301
+/ attachment_id=266                                          /terapia-adulto/                                   301!
+/wp-content/uploads/2023/12/Diseno-sin-titulo-52.png         /terapia-adulto/                                   301
+/psicologia/centro-vienca-2-2                                /img/2023/12/CEntro-VIENCA-2.png                   301
+/ attachment_id=262                                          /img/2023/12/CEntro-VIENCA-2.png                   301!
+/psicologia/img_6810                                         /psicologia/                                       301
+/ attachment_id=252                                          /psicologia/                                       301!
+/wp-content/uploads/2023/12/IMG_6810-scaled.webp             /psicologia/                                       301
+/derecho-penal/attachment/16                                 /img/2023/11/16.png                                301
+/ attachment_id=217                                          /img/2023/11/16.png                                301!
+/derecho-penal/attachment/15                                 /img/2023/11/15.png                                301
+/ attachment_id=216                                          /img/2023/11/15.png                                301!
+/derecho-penal/attachment/14                                 /img/2023/11/14.png                                301
+/ attachment_id=215                                          /img/2023/11/14.png                                301!
+/derecho-penal/attachment/13                                 /img/2023/11/13.png                                301
+/ attachment_id=214                                          /img/2023/11/13.png                                301!
+/derecho-penal/attachment/12                                 /derecho-penal/                                    301
+/ attachment_id=213                                          /derecho-penal/                                    301!
+/wp-content/uploads/2023/11/12.png                           /derecho-penal/                                    301
+/pagina-ejemplo/attachment/11                                /img/2023/11/11.png                                301
+/ attachment_id=200                                          /img/2023/11/11.png                                301!
+/pagina-ejemplo/attachment/10                                /                                                  301
+/ attachment_id=199                                          /                                                  301!
+/wp-content/uploads/2023/11/10.png                           /                                                  301
+/abogada/diseno-sin-titulo-51                                /img/2023/11/Diseno-sin-titulo-51.png              301
+/ attachment_id=175                                          /img/2023/11/Diseno-sin-titulo-51.png              301!
+/abogada/diseno-sin-titulo-50                                /img/2023/11/Diseno-sin-titulo-50.png              301
+/ attachment_id=171                                          /img/2023/11/Diseno-sin-titulo-50.png              301!
+/psicologia/diseno-sin-titulo-22                             /img/2023/11/Diseno-sin-titulo-22.png              301
+/ attachment_id=117                                          /img/2023/11/Diseno-sin-titulo-22.png              301!
+/psicologia/centro-vienca-2                                  /img/2023/11/CEntro-VIENCA-2.png                   301
+/ attachment_id=115                                          /img/2023/11/CEntro-VIENCA-2.png                   301!
+/conocenos/diseno-sin-titulo-48                              /img/2023/11/Diseno-sin-titulo-48.png              301
+/ attachment_id=109                                          /img/2023/11/Diseno-sin-titulo-48.png              301!
+/conocenos/diseno-sin-titulo-47                              /img/2023/11/Diseno-sin-titulo-47.png              301
+/ attachment_id=106                                          /img/2023/11/Diseno-sin-titulo-47.png              301!
+/conocenos/centro-vienca-1                                   /img/2023/11/CEntro-VIENCA-1.png                   301
+/ attachment_id=105                                          /img/2023/11/CEntro-VIENCA-1.png                   301!
+/pagina-ejemplo/6-2                                          /                                                  301
+/ attachment_id=92                                           /                                                  301!
+/wp-content/uploads/2023/11/6-1.png                          /                                                  301
+/pagina-ejemplo/4-3                                          /                                                  301
+/ attachment_id=91                                           /                                                  301!
+/wp-content/uploads/2023/11/4-2.png                          /                                                  301
+/pagina-ejemplo/attachment/6                                 /img/2023/11/6.png                                 301
+/ attachment_id=89                                           /img/2023/11/6.png                                 301!
+/pagina-ejemplo/4-2                                          /img/2023/11/4-1.png                               301
+/ attachment_id=88                                           /img/2023/11/4-1.png                               301!
+/psicologia-abogacia-3                                       /img/2023/11/Psicologia-Abogacia-3.png             301
+/ attachment_id=85                                           /img/2023/11/Psicologia-Abogacia-3.png             301!
+/pagina-ejemplo/diseno-sin-titulo-46                         /                                                  301
+/ attachment_id=78                                           /                                                  301!
+/wp-content/uploads/2023/11/Diseno-sin-titulo-46.png         /                                                  301
+/pagina-ejemplo/diseno-sin-titulo-21                         /                                                  301
+/ attachment_id=76                                           /                                                  301!
+/wp-content/uploads/2023/11/Diseno-sin-titulo-21.png         /                                                  301
+/pagina-ejemplo/diseno-sin-titulo-45                         /img/2023/11/Diseno-sin-titulo-45.png              301
+/ attachment_id=72                                           /img/2023/11/Diseno-sin-titulo-45.png              301!
+/pagina-ejemplo/centro-vienca                                /                                                  301
+/ attachment_id=58                                           /                                                  301!
+/wp-content/uploads/2023/11/CEntro-VIENCA.png                /                                                  301
+/psicologia-abogacia                                         /                                                  301
+/ attachment_id=55                                           /                                                  301!
+/wp-content/uploads/2023/11/Psicologia-Abogacia.png          /                                                  301
+/2-2                                                         /img/2023/11/2-1.png                               301
+/ attachment_id=54                                           /img/2023/11/2-1.png                               301!
+/5                                                           /                                                  301
+/ attachment_id=53                                           /                                                  301!
+/wp-content/uploads/2023/11/5.png                            /                                                  301
+/4                                                           /img/2023/11/4.png                                 301
+/ attachment_id=52                                           /img/2023/11/4.png                                 301!
+/3                                                           /                                                  301
+/ attachment_id=51                                           /                                                  301!
+/wp-content/uploads/2023/11/3.png                            /                                                  301
+/2                                                           /img/2023/11/2.png                                 301
+/ attachment_id=50                                           /img/2023/11/2.png                                 301!
+/pagina-ejemplo/diseno-sin-titulo-44                         /img/2023/11/Diseno-sin-titulo-44.png              301
+/ attachment_id=48                                           /img/2023/11/Diseno-sin-titulo-44.png              301!
+/pagina-ejemplo/diseno-sin-titulo-43-2                       /img/2023/11/Diseno-sin-titulo-43-1.png            301
+/ attachment_id=47                                           /img/2023/11/Diseno-sin-titulo-43-1.png            301!
+/pagina-ejemplo/diseno-sin-titulo-19                         /                                                  301
+/ attachment_id=44                                           /                                                  301!
+/wp-content/uploads/2023/11/Diseno-sin-titulo-19.png         /                                                  301
+/diseno-sin-titulo-43                                        /                                                  301
+/ attachment_id=40                                           /                                                  301!
+/wp-content/uploads/2023/11/Diseno-sin-titulo-43.png         /                                                  301
+/pagina-ejemplo/diseno-sin-titulo-42                         /img/2023/11/Diseno-sin-titulo-42.png              301
+/ attachment_id=37                                           /img/2023/11/Diseno-sin-titulo-42.png              301!
+/diseno-sin-titulo-41                                        /                                                  301
+/ attachment_id=36                                           /                                                  301!
+/wp-content/uploads/2023/11/Diseno-sin-titulo-41.png         /                                                  301
+/pagina-ejemplo/diseno-sin-titulo-40                         /                                                  301
+/ attachment_id=22                                           /                                                  301!
+/wp-content/uploads/2023/11/Diseno-sin-titulo-40.png         /                                                  301
+/pagina-ejemplo/diseno-sin-titulo-39                         /                                                  301
+/ attachment_id=18                                           /                                                  301!
+/wp-content/uploads/2023/11/Diseno-sin-titulo-39.png         /                                                  301
+/pagina-ejemplo/diseno-sin-titulo-37                         /                                                  301
+/ attachment_id=16                                           /                                                  301!
+/wp-content/uploads/2023/11/Diseno-sin-titulo-37.png         /                                                  301
+/pagina-ejemplo/diseno-sin-titulo-38                         /                                                  301
+/ attachment_id=14                                           /                                                  301!
+/wp-content/uploads/2023/11/Diseno-sin-titulo-38.png         /                                                  301
+/pagina-ejemplo/*                                            /                                                  301
+
+# Imágenes subidas (mismas rutas bajo /img/)
+/wp-content/uploads/*                                        /img/:splat                                        301
+
+# Sitemaps de Yoast
+/sitemap_index.xml                                           /sitemap.xml                                       301
+/post-sitemap.xml                                            /sitemap.xml                                       301
+/page-sitemap.xml                                            /sitemap.xml                                       301
+/category-sitemap.xml                                        /sitemap.xml                                       301
+/author-sitemap.xml                                          /sitemap.xml                                       301
+/wp-sitemap.xml                                              /sitemap.xml                                       301
+
+# Feeds RSS
+/feed                                                        /                                                  301
+/feed/*                                                      /                                                  301
+/comments/feed                                               /                                                  301
+/comments/feed/*                                             /                                                  301
+/category/:cat/feed/*                                        /category/:cat/                                    301
+/author/:name/feed/*                                         /author/:name/                                     301
+/:slug/feed/*                                                /:slug/                                            301
+
+# Archivos por fecha
+/2023/*                                                      /blog/                                             301
+/2024/*                                                      /blog/                                             301
+
+# Favicon
+/favicon.ico                                                 /img/2023/11/2-1.png                               200
