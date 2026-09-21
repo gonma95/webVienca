@@ -166,20 +166,17 @@
 })();
 
 /* =============================================
-   FORMULARIO DE CONTACTO (EmailJS)
-   Rellena estas tres constantes con los datos de la cuenta de EmailJS.
-   La plantilla recibe: name, email, phone, subject, service, message.
+   FORMULARIO DE CONTACTO (Netlify Forms)
+   Netlify detecta el formulario "contacto" al desplegar. Se envía por
+   fetch para mostrar el mensaje sin salir de la página, como el original.
    ============================================= */
-const EMAILJS_PUBLIC_KEY = 'TU_PUBLIC_KEY';
-const EMAILJS_SERVICE_ID = 'TU_SERVICE_ID';
-const EMAILJS_TEMPLATE_ID = 'TU_TEMPLATE_ID';
-
 (function () {
   const form = document.getElementById('contactForm');
   if (!form) return;
   const box = form.closest('.cf');
   const out = form.querySelector('.cf__output');
   const btn = form.querySelector('.cf__submit');
+  const ERROR = 'Ha ocurrido un error al intentar enviar tu mensaje. Por favor, inténtalo de nuevo más tarde.';
 
   function show(msg, error) {
     out.textContent = msg;
@@ -192,20 +189,16 @@ const EMAILJS_TEMPLATE_ID = 'TU_TEMPLATE_ID';
 
     const f = form.elements;
     const missing = [];
-    if (!f['your-name'].value.trim()) missing.push(f['your-name']);
-    const email = f['your-email'].value.trim();
-    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) missing.push(f['your-email']);
+    if (!f['nombre'].value.trim()) missing.push(f['nombre']);
+    const email = f['email'].value.trim();
+    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) missing.push(f['email']);
     if (missing.length) {
       missing.forEach(el => el.classList.add('is-invalid'));
       show('Uno o más campos tienen un error. Por favor, revísalos e inténtalo de nuevo.', true);
       return;
     }
-    if (!f['acceptance-674'].checked) {
+    if (!f['privacidad'].checked) {
       show('Debes aceptar la política de privacidad antes de enviar tu mensaje.', true);
-      return;
-    }
-    if (typeof emailjs === 'undefined') {
-      show('Ha ocurrido un error al intentar enviar tu mensaje. Por favor, inténtalo de nuevo más tarde.', true);
       return;
     }
 
@@ -213,19 +206,16 @@ const EMAILJS_TEMPLATE_ID = 'TU_TEMPLATE_ID';
     box.classList.add('is-sending');
     show('');
 
-    emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
-    emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
-      name: f['your-name'].value.trim(),
-      email: email,
-      phone: f['tel-72'].value.trim(),
-      subject: f['your-subject'].value.trim(),
-      service: form.querySelector('input[name="radio-262"]:checked').value,
-      message: f['your-message'].value.trim()
-    }).then(() => {
+    fetch('/contacta/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams(new FormData(form)).toString()
+    }).then(res => {
+      if (!res.ok) throw new Error(res.status);
       form.reset();
       show('Gracias por tu mensaje. Ha sido enviado.');
     }).catch(() => {
-      show('Ha ocurrido un error al intentar enviar tu mensaje. Por favor, inténtalo de nuevo más tarde.', true);
+      show(ERROR, true);
     }).finally(() => {
       btn.disabled = false;
       box.classList.remove('is-sending');
