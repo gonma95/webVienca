@@ -938,8 +938,10 @@ section.row[style*="background-color:#3a7d55"] > .row__in > .cols > .col-12:only
 @media (max-width: 768px) {
   .c-intro .brand-title { font-size: 44px; }
   .c-values { padding: 72px 0; border-radius: 28px; }
-  .c-values__list { grid-template-columns: repeat(2, 1fr); }
-  .c-value:last-child { grid-column: 1 / -1; }
+  .c-values__list { grid-template-columns: 1fr; gap: 12px; max-width: 360px; margin: 0 auto; }
+  .c-value { flex-direction: row; justify-content: flex-start; gap: 18px; padding: 16px 22px; border-radius: 20px; }
+  .c-value__icon { flex: 0 0 48px; width: 48px; height: 48px; }
+  .c-value__icon svg { width: 24px; height: 24px; }
   .c-person__in { padding: 28px 20px; border-radius: 28px; }
   .c-quote { font-size: 23px; }
   .c-lead { font-size: 19px; }
@@ -1184,6 +1186,14 @@ section.row[style*="background-color:#3a7d55"] > .row__in > .cols > .col-12:only
   .t-topics-wrap { border-radius: 28px; }
 }
 
+.sp-cross { display: flex; flex-direction: column; gap: 6px; margin-top: 18px; padding: 24px 26px; border-radius: 24px; background-color: #fff; box-shadow: var(--shadow); color: var(--green); transition: transform .3s var(--ease), box-shadow .3s ease; }
+.sp-cross:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
+.sp-cross__icon { display: inline-flex; align-items: center; justify-content: center; width: 42px; height: 42px; margin-bottom: 6px; border-radius: 50%; background-color: rgba(206, 121, 108, .14); color: var(--coral); }
+.sp-cross__icon svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.sp-cross__kicker { font-family: var(--ff-head); font-size: 12.5px; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; color: var(--coral); }
+.sp-cross strong { font-family: var(--ff-head); font-size: 21px; font-weight: 400; }
+.sp-cross__txt { font-size: 15px; line-height: 1.55; }
+
 /* ---------- Derecho civil / penal (índice de servicios) ---------- */
 .cat-chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 28px; }
 .cat-chips a { padding: 8px 14px; border-radius: 10px; background-color: #fff; box-shadow: var(--shadow); font-size: 14.5px; color: var(--green); transition: background-color .2s ease, color .2s ease; }
@@ -1241,6 +1251,19 @@ section.row[style*="background-color:#3a7d55"] > .row__in > .cols > .col-12:only
 .ct-list li:first-child a { font-family: var(--ff-head); font-size: 22px; }
 .ct-list__icon { flex: 0 0 40px; display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%; background-color: var(--ct-soft); color: var(--ct); }
 .ct-list__icon svg { width: 19px; height: 19px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+
+.ct-hours { display: flex; align-items: center; flex-wrap: wrap; gap: 18px 28px; max-width: 760px; margin: 28px auto 0; padding: 24px 32px; border-radius: 24px; background-color: var(--sand); }
+.ct-hours__icon { display: inline-flex; align-items: center; justify-content: center; width: 48px; height: 48px; border-radius: 50%; background-color: #fff; color: var(--coral); }
+.ct-hours__icon svg { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.ct-hours h2 { font-size: 22px; color: var(--green); }
+.ct-hours dl { display: grid; gap: 4px; margin: 0 0 0 auto; }
+.ct-hours dl div { display: flex; gap: 14px; justify-content: space-between; font-size: 16px; color: var(--green); }
+.ct-hours dt { font-weight: 500; }
+.ct-hours dd { margin: 0; }
+.ct-hours dd span { color: var(--coral); }
+@media (max-width: 768px) { .ct-hours { padding: 22px; } .ct-hours dl { margin: 0; width: 100%; } }
+.p-faq-wrap .p-faqs { margin-top: 0; }
+.p-faq-wrap .bs__faq a { color: var(--coral); text-decoration: underline; text-underline-offset: 3px; }
 
 /* Cómo llegar */
 .ct-map { padding-top: 40px; }
