@@ -1194,6 +1194,18 @@ section.row[style*="background-color:#3a7d55"] > .row__in > .cols > .col-12:only
 .sp-cross strong { font-family: var(--ff-head); font-size: 21px; font-weight: 400; }
 .sp-cross__txt { font-size: 15px; line-height: 1.55; }
 
+.sp-note { padding: 18px 22px; border-left: 2px solid var(--coral); border-radius: 0 16px 16px 0; background-color: #fff; font-weight: 500; }
+.sp-close { margin-top: 44px !important; padding: 36px 38px; border-radius: 28px; background-color: var(--sand); }
+.sp-close h3 { margin-bottom: 14px; font-size: 26px; line-height: 1.3; font-weight: 400; color: var(--green); }
+.sp-close p + p { margin-top: 10px; }
+.sp-close .btn { margin-top: 24px; }
+.sp-article .btn { color: #fff; text-decoration: none; }
+.sp-compare { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.sp-compare > div { padding: 22px 24px; border-radius: 20px; background-color: #fff; box-shadow: var(--shadow); }
+.sp-compare__tag { display: inline-block; margin-bottom: 10px; padding: 4px 12px; border-radius: 999px; background-color: var(--green); color: #fff; font-family: var(--ff-head); font-size: 14px; font-weight: 500; }
+.sp-compare > div:last-child .sp-compare__tag { background-color: var(--coral); }
+@media (max-width: 768px) { .sp-compare { grid-template-columns: 1fr; } .sp-close { padding: 26px 22px; } }
+
 /* ---------- Derecho civil / penal (índice de servicios) ---------- */
 .cat-chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 28px; }
 .cat-chips a { padding: 8px 14px; border-radius: 10px; background-color: #fff; box-shadow: var(--shadow); font-size: 14.5px; color: var(--green); transition: background-color .2s ease, color .2s ease; }
