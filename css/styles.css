@@ -1360,6 +1360,26 @@ section.row[style*="background-color:#3a7d55"] > .row__in > .cols > .col-12:only
 .bs__faq[open] summary::after { transform: translateY(-30%) rotate(225deg); }
 .bs__faq p { margin: 0 !important; padding: 0 22px 20px; }
 
+/* ---------- Portada en tablet y móvil: como webOli (foto arriba, todo centrado) ---------- */
+@media (max-width: 1000px) {
+  .h-hero { padding: 32px 0 56px; }
+  .h-hero__in { gap: 32px; text-align: center; }
+  .h-hero__media { order: -1; width: 320px; max-width: 80%; margin: 0 auto; }
+  .h-hero__media::before { inset: 12px -12px -12px 12px; }
+  .h-hero__media img { aspect-ratio: 4 / 4.6; }
+  .h-hero__text { display: flex; flex-direction: column; align-items: center; }
+  .h-hero__lead { margin-left: auto; margin-right: auto; }
+  .h-hero .h-actions { justify-content: center; }
+}
+@media (max-width: 768px) {
+  .h-hero .h-eyebrow { display: none; }
+  .h-hero__media { width: 280px; }
+  .h-hero__title { font-size: 38px; line-height: 1.15; }
+  .h-hero__lead { margin-top: 16px; font-size: 17px; line-height: 1.7; }
+  .h-hero .h-actions { gap: 10px; margin-top: 28px; }
+  .h-hero .h-actions .btn { height: 44px; line-height: 42px; padding: 0 22px; font-size: 13px; letter-spacing: .12em; }
+}
+
 /* ---------- Cabecera de páginas interiores (estilo webOli) ---------- */
 .page-hero {
   position: relative;
