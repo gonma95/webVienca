@@ -11,55 +11,61 @@
   <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://centrovienca.com/#website","url":"https://centrovienca.com/","name":"Vienca - Vive en Calma","description":"Psicólogos y Abogados en Majadahonda y Online.","inLanguage":"es"}]}</script>
   <link rel="icon" type="image/png" href="/img/2023/11/2-1.png" />
   <link rel="apple-touch-icon" href="/img/2023/11/2-1.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,700&display=swap" />
+  <link rel="preload" href="/fonts/dmsans-normal-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/jost-normal-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/fonts/fonts.css" />
   <link rel="stylesheet" href="/css/styles.css" />
 </head>
-<body class="has-title">
+<body>
   <header class="header" id="header">
     <div class="header__in">
       <button class="header__burger" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav"><span></span></button>
-      <a class="header__logo" href="/"><img src="/img/2023/11/Psicologia-Abogacia-3.png" alt="Logo" width="140" height="140" /></a>
+      <a class="header__logo brand" href="/" aria-label="Centro VIENCA, inicio"><img src="/img/2026/logo-vienca-icono.png" alt="" width="43" height="48" /><span class="brand__name">Centro <b>VIENCA</b></span></a>
       <nav class="nav" id="nav" aria-label="Menú principal">
-        <ul class="nav__list"><li><a href="/conocenos/">Conócenos</a></li><li><a href="/psicologia/">Psicología</a><button class="nav__toggle" type="button" aria-label="Desplegar submenú" aria-expanded="false"></button><div class="nav__sub"><ul><li><a href="/terapia-adulto/">Terapia adultos</a></li><li><a href="/terapia-ninos-y-adolescentes/">Terapia niños y adolescentes</a></li></ul></div></li><li><a href="/abogada/">Abogacía</a><button class="nav__toggle" type="button" aria-label="Desplegar submenú" aria-expanded="false"></button><div class="nav__sub"><ul><li class="has-sub"><a href="/derecho-civil/" class="no-link">Derecho Civil</a><button class="nav__toggle" type="button" aria-label="Desplegar submenú" aria-expanded="false"></button><ul><li><a href="/divorcios-y-separaciones/">DIVORCIOS Y SEPARACIONES</a></li><li><a href="/custodia-compartida/">CUSTODIA COMPARTIDA</a></li><li><a href="/modificacion-de-medidas/">MODIFICACIÓN DE MEDIDAS</a></li><li><a href="/liquidacion-de-gananciales/">LIQUIDACIÓN DE GANANCIALES</a></li><li><a href="/impagos-de-pensiones/">IMPAGOS DE PENSIONES</a></li><li><a href="/jurisdiccion-voluntaria/">JURISDICCIÓN VOLUNTARIA</a></li><li><a href="/ejecucion-de-sentencias/">EJECUCIÓN DE SENTENCIAS</a></li><li><a href="/herencias/">HERENCIAS</a></li><li><a href="/desahucios/">DESAHUCIOS</a></li></ul></li><li class="has-sub"><a href="/derecho-penal/">Derecho penal</a><button class="nav__toggle" type="button" aria-label="Desplegar submenú" aria-expanded="false"></button><ul><li><a href="/delitos-contra-la-persona/">DELITOS CONTRA LA PERSONA</a></li><li><a href="/violencia-de-genero/">VIOLENCIA DE GÉNERO</a></li><li><a href="/delitos-contra-la-libertad/">DELITOS CONTRA LA LIBERTAD</a></li><li><a href="/agresiones-sexuales/">AGRESIONES SEXUALES</a></li><li><a href="/delitos-contra-la-seguridad-vial/">DELITOS CONTRA LA SEGURIDAD VIAL</a></li><li><a href="/delitos-contra-el-patrimonio/">DELITOS CONTRA EL PATRIMONIO</a></li><li><a href="/delitos-cometidos-por-menores/">DELITOS COMETIDOS POR MENORES</a></li></ul></li></ul></div></li><li><a href="/blog/">Blog</a></li><li><a href="/contacta/">Contacta</a></li></ul>
+        <ul class="nav__list"><li><a href="/conocenos/">Conócenos</a></li><li><a href="/psicologia/">Psicología</a><button class="nav__toggle" type="button" aria-label="Desplegar submenú" aria-expanded="false"></button><div class="nav__sub"><ul><li><a href="/terapia-adulto/">Terapia adultos</a></li><li><a href="/terapia-ninos-y-adolescentes/">Terapia niños y adolescentes</a></li></ul></div></li><li><a href="/abogada/">Abogacía</a><button class="nav__toggle" type="button" aria-label="Desplegar submenú" aria-expanded="false"></button><div class="nav__sub"><ul><li class="has-sub"><a href="/derecho-civil/" class="no-link">Derecho Civil</a><button class="nav__toggle" type="button" aria-label="Desplegar submenú" aria-expanded="false"></button><ul><li><a href="/divorcios-y-separaciones/">DIVORCIOS Y SEPARACIONES</a></li><li><a href="/custodia-compartida/">CUSTODIA COMPARTIDA</a></li><li><a href="/modificacion-de-medidas/">MODIFICACIÓN DE MEDIDAS</a></li><li><a href="/liquidacion-de-gananciales/">LIQUIDACIÓN DE GANANCIALES</a></li><li><a href="/impagos-de-pensiones/">IMPAGOS DE PENSIONES</a></li><li><a href="/jurisdiccion-voluntaria/">JURISDICCIÓN VOLUNTARIA</a></li><li><a href="/ejecucion-de-sentencias/">EJECUCIÓN DE SENTENCIAS</a></li><li><a href="/herencias/">HERENCIAS</a></li><li><a href="/desahucios/">DESAHUCIOS</a></li></ul></li><li class="has-sub"><a href="/derecho-penal/">Derecho penal</a><button class="nav__toggle" type="button" aria-label="Desplegar submenú" aria-expanded="false"></button><ul><li><a href="/delitos-contra-la-persona/">DELITOS CONTRA LA PERSONA</a></li><li><a href="/violencia-de-genero/">VIOLENCIA DE GÉNERO</a></li><li><a href="/delitos-contra-la-libertad/">DELITOS CONTRA LA LIBERTAD</a></li><li><a href="/agresiones-sexuales/">AGRESIONES SEXUALES</a></li><li><a href="/delitos-contra-la-seguridad-vial/">DELITOS CONTRA LA SEGURIDAD VIAL</a></li><li><a href="/delitos-contra-el-patrimonio/">DELITOS CONTRA EL PATRIMONIO</a></li><li><a href="/delitos-cometidos-por-menores/">DELITOS COMETIDOS POR MENORES</a></li></ul></li></ul></div></li><li><a href="/acompanamiento-360/">Acompañamiento 360</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contacta/">Contacta</a></li></ul>
       </nav>
     </div>
   </header>
   <main class="content">
-<div class="page-title"><div class="page-title__in"><h1>404 - Page not found</h1><span class="separator small left"></span></div></div><div class="container"><div class="not-found"><h2>The page you are looking for is not found</h2><p>The page you are looking for does not exist. It may have been moved, or removed altogether. Perhaps you can return back to the site's homepage and see if you can find what you are looking for.</p><a class="btn" href="/">Back to homepage</a></div></div>
+<section class="page-hero">
+  <div class="h-wrap page-hero__in">
+    <nav class="breadcrumb" aria-label="Ruta"><a href="/">Inicio</a><span aria-hidden="true">/</span><span aria-current="page">404 · Página no encontrada</span></nav>
+    <h1>404 · Página no encontrada</h1>
+  </div>
+</section><div class="container"><div class="not-found"><h2>No encontramos la página que buscas</h2><p>Puede que la página se haya movido o que ya no exista. Vuelve a la página de inicio y encontrarás todo lo que necesitas.</p><a class="btn" href="/">Volver al inicio</a></div></div>
   </main>
   <footer class="footer">
     <div class="footer__in">
+      <div class="footer__brand">
+        <a class="brand brand--light" href="/" aria-label="Centro VIENCA, inicio"><img src="/img/2026/logo-vienca-icono.png" alt="" width="43" height="48" loading="lazy" /><span class="brand__name">Centro <b>VIENCA</b></span></a>
+        <p class="footer__tagline">Derecho y Psicología para recuperar tu Vida en Calma.</p>
+      </div>
       <div class="footer__col">
         <h5>Menú</h5>
         <ul>
           <li><a href="/conocenos/">Conócenos</a></li>
           <li><a href="/psicologia/">Psicología</a></li>
           <li><a href="/abogada/">Abogacía</a></li>
+          <li><a href="/acompanamiento-360/">Acompañamiento 360</a></li>
           <li><a href="/blog/">Blog</a></li>
           <li><a href="/contacta/">Contacta</a></li>
         </ul>
       </div>
       <div class="footer__col">
-        <ul>
-          <li><a href="/politica-privacidad/" rel="privacy-policy">Política de privacidad</a></li>
-          <li><a href="/aviso-legal/">Aviso legal</a></li>
-        </ul>
-      </div>
-      <div class="footer__col">
         <h5>Pide cita previa</h5>
-        <p>info@centrovienca.com</p>
-        <p>Calle Granadilla, 22, local 4-1.</p>
-        <p>Majadahonda, Madrid</p>
-        <p></p>
-        <p><strong>Servicio Psicología:</strong></p>
+        <p class="footer__label">Servicio Psicología:</p>
         <p><a href="tel:+34687994268">+34 687 99 42 68</a></p>
-        <p></p>
-        <p><strong>Servicio Abogacía:</strong></p>
+        <p class="footer__label">Servicio Abogacía:</p>
         <p><a href="tel:+34620402240">+34 620 40 22 40</a></p>
-        <p></p>
+        <p class="footer__label"><a href="mailto:info@centrovienca.com">info@centrovienca.com</a></p>
+        <p>Calle Granadilla, 22, local 4-1.<br />Majadahonda, Madrid</p>
       </div>
+    </div>
+    <div class="footer__bottom">
+      <ul>
+        <li><a href="/politica-privacidad/" rel="privacy-policy">Política de privacidad</a></li>
+        <li><a href="/aviso-legal/">Aviso legal</a></li>
+      </ul>
     </div>
   </footer>
   <script src="/js/main.js" defer></script>

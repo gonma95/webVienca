@@ -28,6 +28,88 @@
 })();
 
 /* =============================================
+   CABECERA: sombra al desplazarse
+   ============================================= */
+(function () {
+  const header = document.getElementById('header');
+  if (!header) return;
+  const update = () => header.classList.toggle('is-scrolled', window.scrollY > 10);
+  window.addEventListener('scroll', update, { passive: true });
+  update();
+})();
+
+/* =============================================
+   MAPA (se carga solo al pulsar, sin conectar con Google antes)
+   y rutas de autobús desplegables
+   ============================================= */
+document.querySelectorAll('[data-map-load]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const box = btn.closest('[data-map-src]');
+    const f = document.createElement('iframe');
+    f.src = box.dataset.mapSrc.replace(/&amp;/g, '&');
+    f.title = 'Mapa de Centro VIENCA en Majadahonda';
+    f.loading = 'lazy';
+    f.referrerPolicy = 'no-referrer-when-downgrade';
+    f.allowFullscreen = true;
+    box.innerHTML = '';
+    box.appendChild(f);
+    box.classList.add('is-loaded');
+  });
+});
+document.querySelectorAll('.ct-dir__toggle').forEach(btn => {
+  const more = document.getElementById(btn.getAttribute('aria-controls'));
+  btn.addEventListener('click', () => {
+    more.hidden = !more.hidden;
+    btn.setAttribute('aria-expanded', !more.hidden);
+  });
+});
+
+/* =============================================
+   COLUMNAS PARALELAS ALINEADAS
+   Cuando las columnas de una fila repiten la misma estructura
+   (título, subtítulo, imagen, texto, botón...), se colocan sobre una
+   rejilla común (CSS subgrid) para que los elementos equivalentes
+   queden a la misma altura aunque sus textos ocupen distinto número
+   de líneas. Solo se aplica en escritorio (ver .is-aligned en el CSS).
+   ============================================= */
+(function () {
+  const sig = el => el.tagName + '.' + ([...el.classList].find(c => !/^(vc_custom|anim)/.test(c)) || '');
+  const containers = new Set([...document.querySelectorAll('.col')].map(c => c.parentElement));
+
+  containers.forEach(box => {
+    const cols = [...box.children];
+    if (!cols.length || cols.some(c => !c.classList.contains('col'))) return;
+    const spans = cols.map(c => { const m = c.className.match(/(?:^|\s)col-(\d+)(?=\s|$)/); return m ? +m[1] : 0; });
+    if (spans.includes(0) || spans.reduce((a, b) => a + b, 0) !== 12) return;
+
+    const inners = cols.map(c => c.querySelector(':scope > .col__in'));
+    const full = inners.filter(i => i && i.children.length);
+    if (full.length < 2) return;
+    const ref = [...full[0].children].map(sig).join('|');
+    if (full.some(i => [...i.children].map(sig).join('|') !== ref)) {
+      // imagen junto a texto: el texto se centra verticalmente respecto a la imagen
+      const isMedia = i => [...i.children].every(ch => ch.matches('.sp, .img, .gallery'));
+      if (full.length === 2 && full.filter(isMedia).length === 1) box.classList.add('is-media-pair');
+      return;
+    }
+
+    // los elementos en línea (botones) conservan la alineación del texto;
+    // se mide antes de activar la rejilla, que los convierte en bloques
+    full.forEach(i => {
+      const ta = getComputedStyle(i).textAlign;
+      [...i.children].forEach(ch => {
+        if (getComputedStyle(ch).display.startsWith('inline')) {
+          ch.style.justifySelf = ta === 'center' ? 'center' : (ta === 'right' || ta === 'end') ? 'end' : 'start';
+        }
+      });
+    });
+    box.classList.add('is-aligned');
+    box.style.setProperty('--rows', full[0].children.length);
+    cols.forEach((c, k) => { c.style.gridColumn = 'span ' + spans[k]; });
+  });
+})();
+
+/* =============================================
    PARALLAX (equivalente al de WPBakery)
    La capa mide speed*100% del contenedor y se desplaza
    desde -(speed-1)*100% hasta 0 mientras el bloque cruza la pantalla.
@@ -122,29 +204,6 @@
 })();
 
 /* =============================================
-   MASONRY DEL BLOG
-   Cada tarjeta ocupa tantas filas de 1px como mide, así la rejilla
-   coloca la siguiente bajo la columna más corta.
-   ============================================= */
-(function () {
-  const grid = document.querySelector('.blog-masonry');
-  if (!grid) return;
-  const items = [...grid.children];
-  function layout() {
-    grid.classList.add('is-masonry');
-    items.forEach(it => {
-      const h = it.getBoundingClientRect().height + parseFloat(getComputedStyle(it).marginBottom);
-      it.style.gridRowEnd = 'span ' + Math.ceil(h);
-    });
-  }
-  grid.querySelectorAll('img').forEach(img => { if (!img.complete) img.addEventListener('load', layout); });
-  window.addEventListener('resize', layout);
-  window.addEventListener('load', layout);
-  if (document.fonts) document.fonts.ready.then(layout);
-  layout();
-})();
-
-/* =============================================
    ANIMACIONES DE APARICIÓN
    ============================================= */
 (function () {
@@ -166,13 +225,12 @@
 })();
 
 /* =============================================
-   FORMULARIO DE CONTACTO (Netlify Forms)
-   Netlify detecta el formulario "contacto" al desplegar. Se envía por
-   fetch para mostrar el mensaje sin salir de la página, como el original.
+   FORMULARIOS (Netlify Forms)
+   Netlify detecta los formularios ("contacto", "acompanamiento-360") al
+   desplegar. Se envían por fetch para mostrar el mensaje sin salir de la
+   página, como el original.
    ============================================= */
-(function () {
-  const form = document.getElementById('contactForm');
-  if (!form) return;
+document.querySelectorAll('.cf__form').forEach(form => {
   const box = form.closest('.cf');
   const out = form.querySelector('.cf__output');
   const btn = form.querySelector('.cf__submit');
@@ -188,10 +246,10 @@
     form.querySelectorAll('.is-invalid').forEach(el => el.classList.remove('is-invalid'));
 
     const f = form.elements;
-    const missing = [];
-    if (!f['nombre'].value.trim()) missing.push(f['nombre']);
-    const email = f['email'].value.trim();
-    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) missing.push(f['email']);
+    const missing = [...form.querySelectorAll('[required]')].filter(el => {
+      const v = el.value.trim();
+      return !v || (el.type === 'email' && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v));
+    });
     if (missing.length) {
       missing.forEach(el => el.classList.add('is-invalid'));
       show('Uno o más campos tienen un error. Por favor, revísalos e inténtalo de nuevo.', true);
@@ -206,7 +264,7 @@
     box.classList.add('is-sending');
     show('');
 
-    fetch('/contacta/', {
+    fetch(form.getAttribute('action'), {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: new URLSearchParams(new FormData(form)).toString()
@@ -221,4 +279,4 @@
       box.classList.remove('is-sending');
     });
   });
-})();
+});
